@@ -1,0 +1,79 @@
+@import '_variables';
+@import '_mixins';
+
+*{
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family:'Kumbh Sans', sans-serif;
+  height:100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align:center;
+  background: $dark-cyan;
+  font-size: 18px;
+}
+
+.main{
+  background:$clr-white;
+  border-radius: 10px;
+  margin-bottom: .5em;
+  &__image{
+    border-radius: 10px 10px 0px 0px;
+  }
+
+  &__user{
+    &__img{
+      border-radius:50%;
+      position: relative;
+      bottom: 3em;
+      border: 5px solid $clr-white;
+    }
+    
+    &__name{
+      font-size: 1.4rem;
+      @include fw-bold;
+      position: relative;
+      bottom: 1.6em;
+
+      .user__age{
+        color: $dark-gray;
+        @include fw-norm;
+        padding-left: .3em;
+      }
+    }
+
+    &__location{
+      position: relative;
+      bottom: 1.2em;
+      color: $dark-gray;
+      font-size: 1.1em;
+      margin-bottom: .4em;
+    }
+  }
+
+  &__social{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5em 2em;
+
+    &__item{
+      p:first-child{
+        @include fw-bold;
+        font-size:1.2rem;
+        margin-bottom: .3em;
+      }
+
+      p:last-child{
+        font-size: .8rem;
+        color: $dark-gray;
+      }
+    }
+  }
+}
