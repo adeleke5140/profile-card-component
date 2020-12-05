@@ -20,13 +20,12 @@ body{
     url(../images/bg-pattern-top.svg),
     url(../images/bg-pattern-bottom.svg);
   background-position:
-   top left, 
-   bottom right;
+    115% 400%,  -25% -200%;
   background-repeat: no-repeat;
   // background-size: 40% 40%, 80% 20%;
 }
 
-.main{
+.card{
   background:$clr-white;
   border-radius: 10px;
   margin-bottom: .5em;
