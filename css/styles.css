@@ -21,11 +21,11 @@ body {
   background: #19a2ae;
   font-size: 18px;
   background-image: url(../images/bg-pattern-top.svg), url(../images/bg-pattern-bottom.svg);
-  background-position: top left,  bottom right;
+  background-position: 115% 400%,  -25% -200%;
   background-repeat: no-repeat;
 }
 
-.main {
+.card {
   background: #fff;
   border-radius: 10px;
   margin-bottom: .5em;
@@ -33,31 +33,31 @@ body {
           box-shadow: 0px 0px 5px #969696;
 }
 
-.main__image {
+.card__image {
   border-radius: 10px 10px 0px 0px;
 }
 
-.main__user__img {
+.card__user__img {
   border-radius: 50%;
   position: relative;
   bottom: 3em;
   border: 5px solid #fff;
 }
 
-.main__user__name {
+.card__user__name {
   font-size: 1.4rem;
   font-weight: 700;
   position: relative;
   bottom: 1.6em;
 }
 
-.main__user__name .user__age {
+.card__user__name .user__age {
   color: #969696;
   font-weight: 400;
   padding-left: .3em;
 }
 
-.main__user__location {
+.card__user__location {
   position: relative;
   bottom: 1.2em;
   color: #969696;
@@ -65,7 +65,7 @@ body {
   margin-bottom: .4em;
 }
 
-.main__social {
+.card__social {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -82,13 +82,13 @@ body {
   padding: 1.5em 2em;
 }
 
-.main__social__item p:first-child {
+.card__social__item p:first-child {
   font-weight: 700;
   font-size: 1.2rem;
   margin-bottom: .3em;
 }
 
-.main__social__item p:last-child {
+.card__social__item p:last-child {
   font-size: .8rem;
   color: #969696;
 }
