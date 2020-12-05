@@ -20,12 +20,17 @@ body {
   text-align: center;
   background: #19a2ae;
   font-size: 18px;
+  background-image: url(../images/bg-pattern-top.svg), url(../images/bg-pattern-bottom.svg);
+  background-position: top left,  bottom right;
+  background-repeat: no-repeat;
 }
 
 .main {
   background: #fff;
   border-radius: 10px;
   margin-bottom: .5em;
+  -webkit-box-shadow: 0px 0px 5px #969696;
+          box-shadow: 0px 0px 5px #969696;
 }
 
 .main__image {
